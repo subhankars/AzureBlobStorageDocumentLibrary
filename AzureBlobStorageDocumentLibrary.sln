@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30516.212
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBlobStorageDocumentLibrary.Api", "AzureBlobStorageDocumentLibrary.Api\AzureBlobStorageDocumentLibrary.Api.csproj", "{746BCE55-61CD-459A-9C20-6A852264CFCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBlobStorageDocumentLibrary.Service", "AzureBlobStorageDocumentLibrary.Service\AzureBlobStorageDocumentLibrary.Service.csproj", "{34D217F4-1279-49D4-B1C8-E7D93926253C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{746BCE55-61CD-459A-9C20-6A852264CFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746BCE55-61CD-459A-9C20-6A852264CFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746BCE55-61CD-459A-9C20-6A852264CFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746BCE55-61CD-459A-9C20-6A852264CFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D217F4-1279-49D4-B1C8-E7D93926253C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D217F4-1279-49D4-B1C8-E7D93926253C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D217F4-1279-49D4-B1C8-E7D93926253C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D217F4-1279-49D4-B1C8-E7D93926253C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25527944-79F1-4821-BF37-C2749FFC8462}
+	EndGlobalSection
+EndGlobal
