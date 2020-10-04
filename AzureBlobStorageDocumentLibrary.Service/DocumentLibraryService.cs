@@ -84,6 +84,18 @@ namespace AzureBlobStorageDocumentLibrary.service
             var blobClient = BlobContainerClient.GetBlockBlobClient(fileName).WithVersion(versionToDelete);
             await blobClient.DeleteAsync();
         }
+
+        /// <summary>
+        /// Gets latest VersionId of a given file
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public string GetLatestVersion(string fileName)
+        {
+            var blobClient = BlobContainerClient.GetBlockBlobClient(fileName);
+            var docProperties = blobClient.GetPropertiesAsync();
+            return docProperties.Result.Value.VersionId;
+        }
       
     }
 }

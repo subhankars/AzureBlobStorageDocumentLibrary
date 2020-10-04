@@ -87,5 +87,18 @@ namespace AzureBlobStorageDocumentLibrary.Api.Controllers
             await blobHelper.DeleteSpecificVersion(fileName, versionToDelete);
             return Ok(string.Format("File : {0} with Version: {1} deleted successfully", fileName, versionToDelete));
         }
+
+        /// <summary>
+        /// Gets Latest file version
+        /// </summary>
+        /// <param name="fileName">File Name</param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("GetLatestFileVersion")]
+        public IActionResult GetLatestVersion(string fileName)
+        {
+            var version = blobHelper.GetLatestVersion(fileName);
+            return Ok(string.Format("Latest version of file {0} is {1}", fileName, version));
+        }
     }
 }
