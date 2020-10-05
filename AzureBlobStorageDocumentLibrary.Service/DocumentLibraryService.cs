@@ -93,8 +93,8 @@ namespace AzureBlobStorageDocumentLibrary.service
         public string GetLatestVersion(string fileName)
         {
             var blobClient = BlobContainerClient.GetBlockBlobClient(fileName);
-            var docProperties = blobClient.GetPropertiesAsync();
-            return docProperties.Result.Value.VersionId;
+            var docProperties = blobClient.GetProperties();
+            return docProperties.Value.VersionId;
         }
       
     }
