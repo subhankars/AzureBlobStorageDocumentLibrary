@@ -37,6 +37,7 @@ namespace AzureBlobStorageDocumentLibrary.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             options.SwaggerEndpoint("/swagger/v1/swagger.json", "Azure Blob Document Library API"));
@@ -47,6 +48,7 @@ namespace AzureBlobStorageDocumentLibrary.Api
             {
                 endpoints.MapControllers();
             });
+           
         }
     }
 }
